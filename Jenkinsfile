@@ -8,7 +8,7 @@ pipeline {
         BROWSERSTACK_USERNAME = credentials('browserstack-username')
         BROWSERSTACK_ACCESS_KEY = credentials('browserstack-access-key')
         
-        APP_PATH='bs://c162f76b1193ac30a7781f9c254fe685f135a227'
+        APP_PATH='bs://fe0b7f3f0f3d51e7c52767bb80e6e60ef87d1677'
     }
 
     stages {
@@ -22,7 +22,7 @@ pipeline {
         
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/rafael1199v/BrowserstackJenkins.git'
+                git branch: 'master', url: 'https://github.com/evertms/BrowserstackJenkins.git'
             }
         }
 
